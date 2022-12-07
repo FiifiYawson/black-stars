@@ -1,0 +1,43 @@
+h3 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 218, 102);
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+}
+
+#nav-message span {
+    color: rgb(209, 104, 121);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nav-message span:hover {
+    text-decoration: none;
+}

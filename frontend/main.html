@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Black Stars</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="head-text">Black Stars</h1>
+        <div id="menu">
+            <a class="menu-option" onclick="logout(event)">Log Out</a>
+            <a class="menu-option" onclick="deleteAccount(event)">Delete Account</a>
+        </div>
+    </header>
+    <table id="players-table">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>positions</td>
+                <td>Rating</td>
+                <td>Height(cm)</td>
+                <td>Weight(kg)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tbody>
+        </tbody>
+    </table>
+    <button id="add-button" onclick="addPlayerSetup()">Add Player</button>
+    <form action="/players" onsubmit="submitPlayer(event)" id="player-form" method="POST">
+        <div class="input" id="name-input">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="player-name-input" required>
+        </div>
+        <div class="input" id="positions-inputs">
+            <div class="check-box">
+                <label for="goal-keeper">Goal Keeper</label>
+                <input type="checkbox" value="Goal Keeper(GP)" name="positions" id="goal-keeper">
+            </div>
+            <div class="check-box">
+                <label for="right-back">Right Back</label>
+                <input type="checkbox" value="Right Fullback(RB)" name="positions" id="right-back">
+            </div>
+            <div class="check-box">
+                <label for="left-back">Left Back</label>
+                <input type="checkbox" value="Left Fullback(LB)" name="positions" id="left-back">
+            </div>
+            <div class="check-box">
+                <label for="center-back">Center Back</label>
+                <input type="checkbox" value="Center Back(CB)" name="positions" id="center-back">
+            </div>
+            <div class="check-box">
+                <label for="sweeper">Sweeper</label>
+                <input type="checkbox" value="Sweeper(S)" name="positions" id="sweeper">
+            </div>
+            <div class="checkbox">
+                <label for="defender">Defender</label>
+                <input type="checkbox" value="Defender(D)" name="positions" id="defender">
+            </div>
+            <div class="check-box">
+                <label for="center-midfielder">Center Midfielder</label>
+                <input type="checkbox" value="Center Midfielder(CM)" name="positions" id="center-midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="right-midfielder">Right Midfielder</label>
+                <input type="checkbox" value="Right Midfielder(RM)" name="positions" id="right-midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="left-midfielder">Left Midfielder</label>
+                <input type="checkbox" value="Left Midfielder(LM)" name="positions" id="left-midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="midfielder">Midfielder</label>
+                <input type="checkbox" value="Midfielder(M)" name="positions" id="midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="center-foward">Center Foward</label>
+                <input type="checkbox" value="Center Foward(CF)" name="positions" id="center-foward">
+            </div>
+            <div class="checkbox">
+                <label for="striker">Striker</label>
+                <input type="checkbox" value="Striker(S)" name="positions" id="striker">
+            </div>
+            <div class="checkbox">
+                <label for="attacking-midfielder">Attacking Midfielder</label>
+                <input type="checkbox" value="Attacking Midfielder(AM)" name="positions" id="attacking-midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="defencive-midfielder">Defencive Midfielder</label>
+                <input type="checkbox" value="Defencive Midfielder(DF)" name="positions" id="defencive-midfielder">
+            </div>
+            <div class="checkbox">
+                <label for="right-winger">Right Winger</label>
+                <input type="checkbox" value="Right Winger(RW)" name="positions" id="right-winger">
+            </div>
+            <div class="checkbox">
+                <label for="left-winger">Left Winger</label>
+                <input type="checkbox" value="Left Winger(LW)" name="positions" id="left-winger">
+            </div>
+            <div class="checkbox">
+                <label for="winger">Winger</label>
+                <input type="checkbox" value="Winger(W)" name="positions" id="winger">
+            </div>
+            <div class="checkbox">
+                <label for="forward">Forward</label>
+                <input type="checkbox" value="Forward(F)" name="positions" id="forward">
+            </div>
+        </div>
+        <div id="number-inputs">
+            <div class="input" id="age-input">
+                <label for="name">Age</label>
+                <input type="number" name="age" id="player-age-input">
+            </div>
+            <div class="input" id="rating-input">
+                <label for="rating">Rating</label>
+                <input type="number" value="rating" name="rating" id="player-rating-input">
+            </div>
+            <div class="input" id="height-input">
+                <label for="height">Height</label>
+                <input type="number" name="height" id="player-height-input">
+            </div>
+            <div class="input" id="weight-input">
+                <label for="weight">Weight</label>
+                <input type="number" name="weight" id="player-weight-input">
+            </div>
+        </div>
+        <input type="submit" value="Submit" id="player-submit">
+    </form>
+</body>
+<script defer src="scripts/main.js"></script>
+
+</html>

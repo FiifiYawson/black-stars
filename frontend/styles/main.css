@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+}
+
+#menu {
+    margin: 20px;
+}
+
+.menu-option {
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(224, 218, 102);
+}
+
+.menu-option:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 100px auto;
+    margin-bottom: 0;
+    border-bottom: 10px #ccc solid;
+}
+
+thead {
+    background-color: #444;
+    color: #eee;
+}
+
+tr {
+    height: 50px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(224, 218, 102);
+}
+
+td {
+    padding: 0 30px;
+}
+
+.update-player-button,
+.delete-player-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-align: center;
+}
+
+.update-player-button {
+    font-size: 30px;
+    background-color: rgb(74, 231, 74);
+}
+
+.delete-player-button {
+    font-size: 20px;
+    background-color: rgb(239, 54, 54);
+}
+
+form {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 120px;
+    width: 600px;
+    margin: auto;
+}
+
+form.active {
+    height: 500px;
+}
+
+input {
+    text-align: center;
+}
+
+#add-button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 218, 102);
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#name-input,
+#positions-input,
+#age-input,
+#rating-input,
+#height-input,
+#weight-input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+input[type="number"] {
+    width: 100px;
+    margin: auto;
+}
+
+#positions-inputs {
+    height: 100px;
+    width: fit-content;
+    overflow: auto;
+    margin: auto;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    text-align: right;
+}
+
+#number-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 218, 102);
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
