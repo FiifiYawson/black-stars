@@ -8,9 +8,9 @@ This is a simple app that provides authorized user with information of the black
 * Positions. etc
   
 ### Features
-> Update Player info
-> Add Players
-> Delete Players
+* Update Player info
+* Add Players
+* Delete Players
 
 ### Technologies
 * NodeJs
