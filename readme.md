@@ -20,7 +20,7 @@ This is a simple app that provides authorized user with information of the black
 
 ### How it works
 Users are to create an account to have access to the players database. 
-To create an account you are to provide your email __(not authenticated)__ and create a password to be given access.
+To create an account you are to provide your email _(not authenticated)_ and create a password to be given access.
 When Registration is complete you now have access to the database of all the current players of the black stars of the year 2022.
 You can go on and update, create and delete any player at will.
 
@@ -49,4 +49,4 @@ on your pc, open your prefered cli, move to your prefered folder and run `git cl
 * after setting up your environment variable, Run `npm run start`.
   If for any reason it refused to start, Run `npm run build` then run `npm run start` again.
 
-* Server will start and you can run the project on your browser at localhost:(__PORT number in .env__)
+* Server will start and you can run the project on your browser at localhost:(_PORT number in .env_)
