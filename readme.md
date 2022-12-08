@@ -30,7 +30,7 @@ You can go on and update, create and delete any player at will.
 
 ### Project Setup
 Follow these instructions to setup this project on your PC.
-To begin, make sure you already have ___node, npm, and a MongoDB__ installed on your PC.
+To begin, make sure you already have __node, npm, and a MongoDB__ installed on your PC.
 
 * Clone this Repository
 on your pc, open your prefered cli, move to your prefered folder and run `git clone https://github.com/FiifiYawson/black-stars.git`.
